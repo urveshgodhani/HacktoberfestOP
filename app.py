@@ -52,7 +52,6 @@ def populate():
     sql = '''INSERT INTO blood (blood_bank_name, location, mobile_no, blood_group) 
              VALUES (%s,%s,%s, %s)'''
     cursor = cursor.execute(sql,(new_name, new_loc, new_no, new_group))
-    conn.commit()
     return "Entry Recorded successfully"
 
 
